@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="0dp">
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:text="Địa Chỉ Nhận Hàng"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:text="Địa Chỉ Nhận Hàng: "-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="14dp"-->
+<!--        android:layout_marginBottom="5dp"/>-->
+
+    <!-- Address Holder 1 (Default) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/address_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123 Main St, City, Country"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/edit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/delete_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <!-- Line to mark the default -->
+        <TextView
+            android:id="@+id/default_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            android:text="Default Address"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- Address Holder 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/address_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="456 Second St, City, Country"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/edit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/delete_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Address Holder 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/address_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="789 Third St, City, Country"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/edit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/delete_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/addbutton"
+        android:scaleType="centerCrop"
+        android:contentDescription="Add"
+        android:layout_gravity="right|bottom"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp" />
+</LinearLayout>

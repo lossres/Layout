@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="0dp">
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:text="Tài Khoản Liên Kết"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Ngân Hàng Liên Kết: "
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- Card Background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Mastercard -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MASTERCARD."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/mastercard_logo"
+                android:contentDescription="Mastercard Logo" />
+
+        </LinearLayout>
+
+
+        <!-- SIM Chip -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mastercard_sim"
+            android:contentDescription="SIM Chip" />
+
+        <!-- Card Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:text="**** **** **** 1234"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Valid Thru Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:text="Valid Thru"
+            android:textSize="10sp"
+            android:textColor="@android:color/white" />
+
+
+        <!-- Expiry Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <!-- Cardholder Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Lee M. Cardholder"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <!-- Card Background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Mastercard -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MASTERCARD."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/mastercard_logo"
+                android:contentDescription="Mastercard Logo" />
+
+        </LinearLayout>
+
+
+        <!-- SIM Chip -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mastercard_sim"
+            android:contentDescription="SIM Chip" />
+
+        <!-- Card Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignParentStart="true"
+            android:text="**** **** **** 1234"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Valid Thru Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:text="Valid Thru"
+            android:textSize="10sp"
+            android:textColor="@android:color/white" />
+
+
+        <!-- Expiry Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <!-- Cardholder Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Lee M. Cardholder"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ví Điện Tử: "
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/addbutton"
+        android:scaleType="centerCrop"
+        android:contentDescription="Add"
+        android:layout_gravity="right|bottom"
+        android:background="?attr/selectableItemBackground"
+        android:padding="10dp" />
+
+</LinearLayout>
